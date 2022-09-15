@@ -1,11 +1,17 @@
-.profile {
+.profile,
+.description {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   flex-direction: column;
+}
 
-  /* stats {
-    display: flex;
-  } */
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(69, 68, 73);
 }
