@@ -1,8 +1,9 @@
-// import css from './User.module.css';
+import styles from './User.module.css';
+console.log('~ styles', styles);
 
 const Profile = ({ avatar, username, tag, location, stats }) => {
   return (
-    <div class="profile">
+    <div className={styles.profile}>
       <div class="description">
         <img src={avatar} alt="User avatar" class="avatar" />
         <p class="name">{username}</p>
