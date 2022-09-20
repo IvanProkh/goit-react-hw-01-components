@@ -1,4 +1,4 @@
-import Profile from './user/User';
+import Profile from './user/Profile';
 import user from './user/user.json';
 
 import Statistics from './statistics/Statistics';
