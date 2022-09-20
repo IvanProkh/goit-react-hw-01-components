@@ -2,7 +2,7 @@
 // import styles from './user.module.css';
 // console.log('~ styles', styles);
 
-import ProfileLayout from './UserLayout';
+import ProfileLayout from './ProfileLayout';
 
 const Profile = ({ items }) => {
   return (
