@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 // import styles from './user.module.css';
 // console.log('~ styles', styles);
 
@@ -16,12 +16,8 @@ const Profile = ({ items }) => {
   );
 };
 
-// Profile.propTypes = {
-//   avatar: PropTypes.string.isRequired,
-//   username: PropTypes.string.isRequired,
-//   tag: PropTypes.string.isRequired,
-//   location: PropTypes.string.isRequired,
-//   stats: PropTypes.object.isRequired,
-// };
+Profile.propTypes = {
+  items: PropTypes.object.isRequired,
+};
 
 export default Profile;

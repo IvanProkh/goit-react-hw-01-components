@@ -20,10 +20,6 @@ const FriendList = ({ friends }) => {
   );
 };
 
-// FriendList.propTypes = {
-//   friends: PropTypes.object.isRequired,
-// };
-
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({

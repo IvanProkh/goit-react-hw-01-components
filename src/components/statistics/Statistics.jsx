@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 // import styles from '';
 
-const Statistics = ({ stats }) => {
+const Statistics = ({ title, stats }) => {
   return (
     <section className="statistics">
-      <h2 className="title">Upload stats</h2>
+      {title && <h2 className="title"> {title}</h2>}
 
       <ul className="stat-list">
         {stats.map(item => (
@@ -29,3 +29,6 @@ Statistics.propTypes = {
 };
 
 export default Statistics;
+
+/* <div>{title && <h2 className="title">{title}</h2>}</div> */
+//  <h2 className="title">Upload stats</h2>
