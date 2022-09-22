@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import styles from './User.module.css';
-// console.log('~ styles', styles);
 
 const ProfileLayout = ({ avatar, username, tag, location, stats }) => {
   return (
