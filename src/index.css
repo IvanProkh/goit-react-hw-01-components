@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  /* background-color: rgb(226, 217, 217); */
   line-height: 1.5;
   display: flex;
   justify-content: center;
