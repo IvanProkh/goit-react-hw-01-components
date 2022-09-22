@@ -20,4 +20,4 @@ Profile.propTypes = {
   items: PropTypes.object.isRequired,
 };
 
-export default Profile;
+export { Profile };

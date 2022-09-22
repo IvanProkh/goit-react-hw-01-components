@@ -31,4 +31,4 @@ FriendList.propTypes = {
   ),
 };
 
-export default FriendList;
+export { FriendList };

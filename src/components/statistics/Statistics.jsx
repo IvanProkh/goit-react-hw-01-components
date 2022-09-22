@@ -28,7 +28,7 @@ Statistics.propTypes = {
   ),
 };
 
-export default Statistics;
+export { Statistics };
 
 /* <div>{title && <h2 className="title">{title}</h2>}</div> */
 //  <h2 className="title">Upload stats</h2>
