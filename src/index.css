@@ -29,6 +29,7 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
 }
 ul,
 ol {
@@ -42,6 +43,13 @@ img {
   height: auto;
 }
 
-.container {
-  margin-bottom: 10px;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td {
+  margin: 0;
+  padding: 0;
 }
