@@ -1,19 +1,25 @@
 import PropTypes from 'prop-types';
-// import styles from '';
+import css from './FriendList.module.css';
 
-const FriendList = ({ friends }) => {
+export const FriendList = ({ friends }) => {
+  console.log(friends[0].isOnline);
   return (
-    <ul className="friend-list">
+    <ul className={css.friendList}>
       {friends.map(friend => (
-        <li className="item" key={friend.id}>
-          <span className="status">{friend.status}</span>
+        <li className={css.item} key={friend.id}>
+          {/* {{ {friend.isOnline } && <h2 className={css.title}>{title}</h2>} && <h2 className={css.title}>{title}</h2>} */}
+
+          <span
+            className={css.status}
+            style={{ backgroundColor: 'black' }}
+          ></span>
           <img
-            className="avatar"
+            className={css.avatar}
             src={friend.avatar}
             alt="User avatar"
-            width="48"
+            width="77"
           />
-          <p className="name">{friend.name}</p>
+          <p className={css.name}>{friend.name}</p>
         </li>
       ))}
     </ul>
@@ -31,4 +37,4 @@ FriendList.propTypes = {
   ),
 };
 
-export { FriendList };
+//  {/* / {friend.status} / */}

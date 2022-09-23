@@ -6,14 +6,17 @@ export const Statistics = ({ title, stats }) => {
     <section className={css.statistics}>
       {title && <h2 className={css.title}>{title}</h2>}
 
-      {/* {css.stat - list} */}
-
-      {/* <ul className="stat-list"> */}
-      <ul className={css.statList}>
+      <ul className={css.stat__list}>
         {stats.map(item => (
-          <li className="item" key={item.id}>
-            <span className="label">{item.label}</span>
-            <span className="percentage">{item.percentage}%</span>
+          <li
+            style={{
+              backgroundColor: gatRandomColor(),
+            }}
+            className={css.item}
+            key={item.id}
+          >
+            <span className={css.label}>{item.label}</span>
+            <span className={css.percentage}>{item.percentage}%</span>
           </li>
         ))}
       </ul>
@@ -30,3 +33,16 @@ Statistics.propTypes = {
     })
   ),
 };
+
+function gatRandomColor() {
+  const backgroundColor = `rgb(${getRandom(0, 220)}, ${getRandom(
+    0,
+    220
+  )}, ${getRandom(0, 220)})`;
+  console.log('~ backgroundColor', backgroundColor);
+
+  function getRandom(min, max) {
+    return Math.ceil(Math.random() * (max - min) + min);
+  }
+  return backgroundColor;
+}
