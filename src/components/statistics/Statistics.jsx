@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
-import styles from './statisticsStyle.module.css';
+import css from './Statistics.module.css';
 
-const Statistics = ({ title, stats }) => {
+export const Statistics = ({ title, stats }) => {
   return (
-    <section className={styles.statistics}>
-      {title && <h2 className={styles.title}>{title}</h2>}
+    <section className={css.statistics}>
+      {title && <h2 className={css.title}>{title}</h2>}
 
-      {/* {styles.stat - list} */}
+      {/* {css.stat - list} */}
 
-      <ul className="stat-list">
+      {/* <ul className="stat-list"> */}
+      <ul className={css.statList}>
         {stats.map(item => (
           <li className="item" key={item.id}>
             <span className="label">{item.label}</span>
@@ -29,8 +30,3 @@ Statistics.propTypes = {
     })
   ),
 };
-
-export { Statistics };
-
-/* <div>{title && <h2 className="title">{title}</h2>}</div> */
-//  <h2 className="title">Upload stats</h2>

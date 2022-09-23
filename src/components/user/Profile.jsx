@@ -1,10 +1,8 @@
 import PropTypes from 'prop-types';
-// import styles from './user.module.css';
-// console.log('~ styles', styles);
 
 import ProfileLayout from './ProfileLayout';
 
-const Profile = ({ items }) => {
+export const Profile = ({ items }) => {
   return (
     <ProfileLayout
       username={items.username}
@@ -19,5 +17,3 @@ const Profile = ({ items }) => {
 Profile.propTypes = {
   items: PropTypes.object.isRequired,
 };
-
-export { Profile };
