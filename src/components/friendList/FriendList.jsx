@@ -3,7 +3,7 @@ import css from './FriendList.module.css';
 
 export const FriendList = ({ friends }) => {
   console.log(friends[0].isOnline);
-  let active;
+  // let active;
   return (
     <ul className={css.friend__list}>
       {friends.map(friend => (
