@@ -5,7 +5,7 @@ export const FriendList = ({ friends }) => {
   console.log(friends[0].isOnline);
   let active;
   return (
-    <ul className={css.friendList}>
+    <ul className={css.friend__list}>
       {friends.map(friend => (
         <li className={css.item} key={friend.id}>
           {/* {{ {friend.isOnline } && <h2 className={css.title}>{title}</h2>} && <h2 className={css.title}>{title}</h2>} */}
@@ -41,15 +41,15 @@ FriendList.propTypes = {
 
 //  style={{ backgroundColor: 'black' }}
 
-const friend = document.querySelector('.status');
+// const friend = document.querySelector('.status');
 // console.log('~ friend', friend);
 
 // friend.addEventListener('click', findActiveFriends);
 
-function findActiveFriends(evt) {
-  if (evt.key === 'Escape') {
-    friend.classList.add('online');
-  } else {
-    friend.classList.add('offline');
-  }
-}
+// function findActiveFriends(evt) {
+//   if (evt.key === 'Escape') {
+//     friend.classList.add('online');
+//   } else {
+//     friend.classList.add('offline');
+//   }
+// }
