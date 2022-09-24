@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import ProfileLayout from './ProfileLayout';
+import { ProfileLayout } from './ProfileLayout';
 
 export const Profile = ({ items }) => {
   return (

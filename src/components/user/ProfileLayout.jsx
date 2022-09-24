@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
 
-const ProfileLayout = ({ avatar, username, tag, location, stats }) => {
+export const ProfileLayout = ({ avatar, username, tag, location, stats }) => {
   return (
     <div className={css.profile}>
       <div className={css.description}>
@@ -36,5 +36,3 @@ ProfileLayout.propTypes = {
   location: PropTypes.string.isRequired,
   stats: PropTypes.objectOf(PropTypes.number),
 };
-
-export default ProfileLayout;
