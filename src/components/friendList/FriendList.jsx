@@ -10,8 +10,11 @@ export const FriendList = ({ friends }) => {
         <li className={css.item} key={friend.id}>
           {/* {{ {friend.isOnline } && <h2 className={css.title}>{title}</h2>} && <h2 className={css.title}>{title}</h2>} */}
 
-          <span className="status">
-            <style>active = friend.isOnline; console.log(active);</style>
+          <span
+            className={css.status}
+            style={{ backgroundColor: checkStatus(friend.isOnline) }}
+          >
+            {friend.isOnline}
           </span>
           <img
             className={css.avatar}
@@ -25,6 +28,10 @@ export const FriendList = ({ friends }) => {
     </ul>
   );
 };
+
+function checkStatus(isOnline) {
+  return isOnline ? 'green' : 'red';
+}
 
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
