@@ -29,7 +29,8 @@
   margin-left: 30px;
   margin-right: 20px;
 
-  background-color: chartreuse;
+  /** нужен для ф-н которая изменяет цвет онлайн */
+  /* background-color: chartreuse; */
   border-radius: 50%;
 }
 
@@ -46,4 +47,12 @@
 .name {
   font-weight: bold;
   font-size: 30px;
+}
+
+.true {
+  background-color: green;
+}
+
+.false {
+  background-color: red;
 }

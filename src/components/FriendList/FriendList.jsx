@@ -7,8 +7,10 @@ export const FriendList = ({ friends }) => {
       {friends.map(({ id, isOnline, avatar, name }) => (
         <li className={css.item} key={id}>
           <span
-            className={css.status}
-            style={{ backgroundColor: checkStatus(isOnline) }}
+            className={`$ {css.status}  ${css[isOnline]} `}
+
+            //* решение, поиска онлайн через ф-н
+            // style={{ backgroundColor: checkStatus(isOnline) }}
           >
             {isOnline}
           </span>
@@ -25,9 +27,10 @@ export const FriendList = ({ friends }) => {
   );
 };
 
-function checkStatus(isOnline) {
-  return isOnline ? 'green' : 'red';
-}
+//* ф-н которая определяет пользователь онлайн или нет
+// function checkStatus(isOnline) {
+//   return isOnline ? 'green' : 'red';
+// }
 
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
